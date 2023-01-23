@@ -1,0 +1,11 @@
+inputs:
+set total_sales = 8000
+set employees = 6
+set tip_percentage = 2%
+
+processing:
+set total_tips = total_sales * tip_percentage / 100
+set tip_each = total_tips / employees
+
+output:
+display tip_each
