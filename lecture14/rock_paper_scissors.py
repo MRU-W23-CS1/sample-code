@@ -1,5 +1,10 @@
+import random
+
 def get_computer_choice() -> str:
-    return "R"
+    """
+    Randomly select rock, paper, or scissors
+    """
+    return random.choice("RPS")
 
 def compare(u_choice: str, c_choice: str) -> str:
     """
@@ -16,6 +21,9 @@ def compare(u_choice: str, c_choice: str) -> str:
     return outcome
 
 def test():
+    print(get_computer_choice())
+    print(get_computer_choice())
+    print(get_computer_choice())
     print(compare("R", "R"))
     print(compare("R", "P"))
     print(compare("R", "S"))
