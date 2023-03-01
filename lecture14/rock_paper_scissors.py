@@ -33,7 +33,8 @@ def main():
     user = input("Choose between R, P, S: ")
     computer = get_computer_choice()
     result = compare(user, computer)
-    print(f"You chose {user}, computer chose {computer}. That's a {result}!")
+    print(f"You chose {user}, computer chose {computer}. "
+          f"That's a {result}!")
 
 # test()
 main()
