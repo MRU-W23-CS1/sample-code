@@ -3,11 +3,16 @@ def transpose(grid: list) -> list:
     Takes a list of lists and swaps rows for columns.
     """
     t_grid = []
-    for i in range(len(grid)):
-        t_col = []
-        for j in range(len(grid[i])):
-            t_col.append(grid[i][j])
-        t_grid.append(t_col)
+    # assumes a constant number of columns
+    n_rows = len(grid)
+    n_cols = len(grid[0]) 
+
+    # The key is looping over the columns first, then the rows
+    for c in range(n_cols):
+        t_row = []
+        for r in range(n_rows):
+            t_row.append(grid[r][c])
+        t_grid.append(t_row)
     
     return t_grid
 
