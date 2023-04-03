@@ -5,6 +5,10 @@ def get_user_input() -> list:
     (~5 lines of code)
     """
     numbers = input("Enter a list of integers separated by spaces: ")
+
+    # Pythonic/ChatGPT solution:
+    # user_list = [int(x) for x in numbers.split()]
+
     user_list = numbers.split()
     for i in range(len(user_list)):
         user_list[i] = int(user_list[i])
